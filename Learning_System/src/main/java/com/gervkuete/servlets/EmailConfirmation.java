@@ -21,8 +21,8 @@ import org.apache.log4j.Logger;
 public class EmailConfirmation extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;
-	private static final String SENDER = "lepetitgervais1@gmail.com";
-	private static final String PASSWORD = "lareussite2017";
+	private static final String SENDER = "xxxxxxxxxxxxxx";
+	private static final String PASSWORD = "xxxxxxxxxxxxx";
 	
 	private Logger logger = Logger.getLogger(EmailConfirmation.class);
 
