@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <context-param>
+		<param-name>log4j-config-location</param-name>
+		<param-value>WEB-INF/log4j.properties</param-value>
+	</context-param>
+	
+	<listener>
+		<listener-class>com.gervkuete.contextListener.ContextListener</listener-class>
+	</listener>
+	
+	<servlet>
+		<servlet-name>loginAuthentication</servlet-name>
+		<servlet-class>com.gervkuete.servlets.Login</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>disconnection</servlet-name>
+		<servlet-class>com.gervkuete.servlets.Logout</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>registration</servlet-name>
+		<servlet-class>com.gervkuete.servlets.Register</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>forExam</servlet-name>
+		<servlet-class>com.gervkuete.servlets.ExamController</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>accountActivation</servlet-name>
+		<servlet-class>com.gervkuete.servlets.ActivateAccount</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>mailSender</servlet-name>
+		<servlet-class>com.gervkuete.servlets.EmailConfirmation</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>examCreation</servlet-name>
+		<servlet-class>com.gervkuete.servlets.CreateExam</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>verifyingAnswer</servlet-name>
+		<servlet-class>com.gervkuete.servlets.VerifyAnswer</servlet-class>
+	</servlet>
+	
+	<!-- Servlet mappings -->
+	<servlet-mapping>
+		<servlet-name>loginAuthentication</servlet-name>
+		<url-pattern>/login.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>disconnection</servlet-name>
+		<url-pattern>/logout.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>registration</servlet-name>
+		<url-pattern>/register.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>forExam</servlet-name>
+		<url-pattern>/exam.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>accountActivation</servlet-name>
+		<url-pattern>/activation.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>mailSender</servlet-name>
+		<url-pattern>/mailing.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>examCreation</servlet-name>
+		<url-pattern>/examination.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>verifyingAnswer</servlet-name>
+		<url-pattern>/result.do</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Error handling -->
+	<error-page>
+		<exception-type>java.lang.Throwable</exception-type>
+		<location>/error.jsp</location>
+	</error-page>
+	
+	<!-- JNDI resource configuration -->
+	<resource-ref>
+		<description>MySql DataSource connection</description>
+		<res-ref-name>jdbc/DBConnection</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+	</resource-ref>
+	<resource-ref>
+		<description>Resource reference to a factory for Session instances used for sending mail messages</description>
+		<res-ref-name>mail/MailSession</res-ref-name>
+		<res-type>Javax.mail.Session</res-type>
+		<res-auth>Container</res-auth>
+	</resource-ref>
+	
+	<welcome-file-list>
+		<welcome-file>home.jsp</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+  
+</web-app>

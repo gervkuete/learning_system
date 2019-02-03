@@ -1,0 +1,169 @@
+<style>
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    background: #F8F8FF;
+}
+
+
+.main-header {
+    text-align: center;
+    margin: 10px auto 0px;
+    color: white;
+    background-color: #555555;
+    width: 10%;
+    border: 1px solid #B0C4DE;
+    border-bottom: none;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+form{
+    width: 300px;
+    margin: 70px auto 10px;
+    padding: 8px;
+    border: 1 px solid #B0C4DE;
+    background: #c0c0c0;
+    border-radius: 5px;
+}
+
+.form-fields{
+    margin: 0px 0px 5px 0px;
+}
+
+.form-fields label{
+    display: block;
+    text-align: left;
+    margin: 2px;
+}
+
+.form-fields input{
+    height: 25px;
+    width: 94%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.radio-button{
+    padding: 3px;
+    margin: 5px;
+}
+
+
+.submit-button{
+    width: 30%;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    border: none;
+    border-radius: 5px ;
+    background-color: #555555;
+}
+
+p{
+    text-align: center;
+}
+
+
+.wrap-bar {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.page {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.bar {
+  background-color: mediumaquamarine;
+  padding-top: 4px;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+  width:100%;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.left-side {
+  border: 1px solid palegoldenrod;
+  width: 210px;
+  float: left;
+}
+
+.left-element {
+  text-align: center;
+  width: 210px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: lightslategray;
+  color: white;
+}
+
+.dropbtn {
+    background-color: dimgray;
+    width: 210px;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    margin-top: 20px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color:lightskyblue;}
+
+  .section {
+    width: 80%;
+    height: 600px;
+    border: 3px solid green;
+    float: right;
+  }
+  
+  .create-form {
+  width:300px;
+  height:150px;
+  border: 1px solid green;
+  padding: 2px 10px 50px;
+  margin: 40px auto;
+  box-sizing: border-box;
+  }
+  
+  .show-exam {
+  width:500px;
+  height:200px;
+  border: 1px solid blue;
+  margin: 40px auto;
+  box-sizing: border-box;
+  }
+</style>
